@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "reviewerId": 2,
+    "reviewedUserId": 3,
+    "grade": 4,
+    "comment": "Super komunikacija jedino sto kasni...",
+    "date": "03/10/2025 11:02",
+    "deleted": false
+  },
+  {
+    "id": 2,
+    "reviewerId": 3,
+    "reviewedUserId": 2,
+    "grade": 5,
+    "comment": "Odlicni proizvodi!",
+    "date": "03/10/2025 11:34",
+    "deleted": false
+  },
+  {
+    "id": 3,
+    "reviewerId": 3,
+    "reviewedUserId": 5,
+    "grade": 5,
+    "comment": "Mnogo seksi momak",
+    "date": "08/10/2025 18:26",
+    "deleted": false
+  },
+  {
+    "id": 4,
+    "reviewerId": 5,
+    "reviewedUserId": 3,
+    "grade": 2,
+    "comment": "Lose iskustvo",
+    "date": "17/10/2025 16:58",
+    "deleted": false
+  },
+  {
+    "id": 5,
+    "reviewerId": 6,
+    "reviewedUserId": 3,
+    "grade": 5,
+    "comment": "Super",
+    "date": "17/10/2025 16:59",
+    "deleted": false
+  },
+  {
+    "id": 6,
+    "reviewerId": 6,
+    "reviewedUserId": 4,
+    "grade": 5,
+    "comment": "",
+    "date": "17/10/2025 16:59",
+    "deleted": false
+  },
+  {
+    "id": 7,
+    "reviewerId": 7,
+    "reviewedUserId": 3,
+    "grade": 3,
+    "comment": "",
+    "date": "17/10/2025 17:01",
+    "deleted": false
+  },
+  {
+    "id": 8,
+    "reviewerId": 4,
+    "reviewedUserId": 2,
+    "grade": 5,
+    "comment": "Bravo marko",
+    "date": "17/10/2025 17:02",
+    "deleted": false
+  },
+  {
+    "id": 9,
+    "reviewerId": 4,
+    "reviewedUserId": 6,
+    "grade": 1,
+    "comment": "Uzas",
+    "date": "17/10/2025 17:03",
+    "deleted": false
+  },
+  {
+    "id": 10,
+    "reviewerId": 2,
+    "reviewedUserId": 4,
+    "grade": 5,
+    "comment": "",
+    "date": "17/10/2025 17:04",
+    "deleted": false
+  }
+]

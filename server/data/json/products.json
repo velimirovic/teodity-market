@@ -1,0 +1,634 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "price": 50000,
+    "description": "Gaming laptop",
+    "category": "Electronics",
+    "type": "Auction",
+    "date": "21/10/2023 12:00",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.787197,
+      "longitude": 20.457273,
+      "address": {
+        "street": "Knez Mihailova 42",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 3,
+        "amount": 50100,
+        "timestamp": "28/09/2025 17:31"
+      },
+      {
+        "buyerId": 4,
+        "amount": 50200,
+        "timestamp": "28/09/2025 17:34"
+      },
+      {
+        "buyerId": 3,
+        "amount": 50300,
+        "timestamp": "28/09/2025 18:14"
+      }
+    ],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "finalPrice": 50300
+  },
+  {
+    "id": 2,
+    "name": "Digital Camera",
+    "price": 42000,
+    "description": "DSLR camera with 24MP sensor",
+    "category": "Electronics",
+    "type": "Auction",
+    "date": "25/10/2023 11:20",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.812186,
+      "longitude": 20.46116,
+      "address": {
+        "street": "Studentski trg 1",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 3,
+        "amount": 50000,
+        "timestamp": "23/09/2025 16:36"
+      }
+    ],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "finalPrice": 50000
+  },
+  {
+    "id": 3,
+    "name": "Office Chair",
+    "price": 15000,
+    "description": "Ergonomic office chair with lumbar support.",
+    "category": "Furniture",
+    "type": "Fixed",
+    "date": "26/10/2023 09:00",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.806889,
+      "longitude": 20.471431,
+      "address": {
+        "street": "Bulevar kralja Aleksandra 73",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "status": "Sold",
+    "buyer": 3,
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  },
+  {
+    "id": 4,
+    "name": "Headphones",
+    "price": 18000,
+    "description": "Noise-cancelling Bluetooth headphones",
+    "category": "Electronics",
+    "type": "Fixed",
+    "date": "27/10/2023 13:30",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.81844,
+      "longitude": 20.45657,
+      "address": {
+        "street": "Bulevar despota Stefana 5",
+        "city": "Beograd",
+        "postalCode": "11108"
+      }
+    },
+    "status": "Rejected",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "rejectionReason": "I gave them to my friend"
+  },
+  {
+    "id": 5,
+    "name": "Electric Guitar",
+    "price": 28000,
+    "description": "Acoustic-electric guitar with case",
+    "category": "Sports",
+    "type": "Auction",
+    "date": "29/10/2023 12:45",
+    "seller": 2,
+    "images": [
+      "roze.jpg"
+    ],
+    "location": {
+      "latitude": 44.7783311,
+      "longitude": 19.3831154,
+      "address": {
+        "street": "Милоша Обилића",
+        "city": "Bogatic Municipality",
+        "postalCode": "15358"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 4,
+        "amount": 28100,
+        "timestamp": "17/10/2025 16:55"
+      }
+    ],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 4,
+    "finalPrice": 28100
+  },
+  {
+    "id": 6,
+    "name": "Added Product",
+    "price": 13000,
+    "description": "",
+    "category": "Clothing",
+    "type": "Auction",
+    "date": "02/09/2025 14:42",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.804008,
+      "longitude": 20.46511,
+      "address": {
+        "street": "Makedonska 22",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 3,
+        "amount": 14000,
+        "timestamp": "29/09/2025 19:20"
+      }
+    ],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "finalPrice": 14000
+  },
+  {
+    "id": 7,
+    "name": "Test Product 3",
+    "price": 100,
+    "description": "This is a test.",
+    "category": "Sports",
+    "type": "Auction",
+    "date": "03/09/2025 19:57",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.821934,
+      "longitude": 20.407497,
+      "address": {
+        "street": "Zemunska 15",
+        "city": "Beograd",
+        "postalCode": "11080"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 3,
+        "amount": 1000,
+        "timestamp": "01/10/2025 15:13"
+      },
+      {
+        "buyerId": 4,
+        "amount": 3000,
+        "timestamp": "17/10/2025 16:55"
+      }
+    ],
+    "status": "Processing",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  },
+  {
+    "id": 8,
+    "name": "iPhone 16 Pro",
+    "price": 167999,
+    "description": "This phone is not worth its money but people still buy it!",
+    "category": "Electronics",
+    "type": "Fixed",
+    "date": "03/09/2025 20:00",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.798321,
+      "longitude": 20.468526,
+      "address": {
+        "street": "Takovska 7",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3
+  },
+  {
+    "id": 9,
+    "name": "PC",
+    "price": 190000,
+    "description": "Super",
+    "category": "Electronics",
+    "type": "Fixed",
+    "date": "03/09/2025 20:06",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.786568,
+      "longitude": 20.448921,
+      "address": {
+        "street": "Obilićev venac 18",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "status": "Rejected",
+    "rejectionReason": "Kupac nije odgovorio na poruke",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3
+  },
+  {
+    "id": 10,
+    "name": "Test",
+    "price": 1333,
+    "description": "Marko marko marko",
+    "category": "Home & Garden",
+    "type": "Fixed",
+    "date": "13/09/2025 16:13",
+    "seller": 2,
+    "images": [],
+    "location": {
+      "latitude": 44.817764,
+      "longitude": 20.456231,
+      "address": {
+        "street": "Cvijićeva 45",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "status": "Rejected",
+    "buyer": 3,
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "rejectionReason": "Kupac je antipatican!"
+  },
+  {
+    "id": 11,
+    "name": "Smart Watch",
+    "price": 25000,
+    "description": "Fitness tracking smartwatch",
+    "category": "Electronics",
+    "type": "Fixed",
+    "date": "15/09/2025 10:30",
+    "seller": 5,
+    "images": [],
+    "location": {
+      "latitude": 44.773071,
+      "longitude": 20.475893,
+      "address": {
+        "street": "Jurija Gagarina 147",
+        "city": "Beograd",
+        "postalCode": "11070"
+      }
+    },
+    "status": "Rejected",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 4,
+    "rejectionReason": "I decided I want to keep it."
+  },
+  {
+    "id": 12,
+    "name": "Gaming Mouse",
+    "price": 8000,
+    "description": "High precision gaming mouse",
+    "category": "Electronics",
+    "type": "Auction",
+    "date": "16/09/2025 14:20",
+    "seller": 5,
+    "images": [],
+    "location": {
+      "latitude": 44.803364,
+      "longitude": 20.480989,
+      "address": {
+        "street": "Ustanička 182",
+        "city": "Beograd",
+        "postalCode": "11050"
+      }
+    },
+    "offers": [],
+    "status": "Started",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  },
+  {
+    "id": 13,
+    "name": "Desk Lamp",
+    "price": 3500,
+    "description": "LED desk lamp with adjustable brightness",
+    "category": "Home & Garden",
+    "type": "Fixed",
+    "date": "18/09/2025 09:45",
+    "seller": 6,
+    "images": [],
+    "location": {
+      "latitude": 44.752869,
+      "longitude": 20.496113,
+      "address": {
+        "street": "Vojvode Stepe 251",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 4
+  },
+  {
+    "id": 14,
+    "name": "Basketball",
+    "price": 4000,
+    "description": "Professional basketball",
+    "category": "Sports",
+    "type": "Auction",
+    "date": "19/09/2025 16:00",
+    "seller": 6,
+    "images": [],
+    "location": {
+      "latitude": 44.823145,
+      "longitude": 20.391562,
+      "address": {
+        "street": "Cara Dušana 188",
+        "city": "Zemun",
+        "postalCode": "11080"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 3,
+        "amount": 4020,
+        "timestamp": "29/09/2025 19:20"
+      }
+    ],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "finalPrice": 4020
+  },
+  {
+    "id": 15,
+    "name": "Winter Jacket",
+    "price": 12000,
+    "description": "Warm winter jacket, size L",
+    "category": "Clothing",
+    "type": "Fixed",
+    "date": "20/09/2025 11:30",
+    "seller": 6,
+    "images": [],
+    "location": {
+      "latitude": 44.809999,
+      "longitude": 20.415862,
+      "address": {
+        "street": "Glavna 32",
+        "city": "Zemun",
+        "postalCode": "11080"
+      }
+    },
+    "status": "Sold",
+    "buyer": 4,
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  },
+  {
+    "id": 16,
+    "name": "Coffee Maker",
+    "price": 22000,
+    "description": "Automatic coffee maker with grinder",
+    "category": "Kitchen",
+    "type": "Fixed",
+    "date": "21/09/2025 13:15",
+    "seller": 5,
+    "images": [],
+    "location": {
+      "latitude": 44.791021,
+      "longitude": 20.516152,
+      "address": {
+        "street": "Smederevski put 12",
+        "city": "Beograd",
+        "postalCode": "11000"
+      }
+    },
+    "status": "Rejected",
+    "buyer": 4,
+    "rejectionReason": "Changed my mind, keeping it",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  },
+  {
+    "id": 17,
+    "name": "Nike TN",
+    "price": 27999,
+    "description": "Best shoes ever on planet!",
+    "category": "Sports",
+    "type": "Fixed",
+    "date": "29/09/2025 20:24",
+    "seller": 7,
+    "images": [],
+    "location": {
+      "latitude": 44.831667,
+      "longitude": 20.39,
+      "address": {
+        "street": "Radnička 1",
+        "city": "Zemun",
+        "postalCode": "11080"
+      }
+    },
+    "offers": [],
+    "status": "Rejected",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "rejectionReason": "Ne moze kupila si monalisu"
+  },
+  {
+    "id": 18,
+    "name": "Monalisa",
+    "price": 3000000,
+    "description": "Bid for it!",
+    "category": "Art",
+    "type": "Auction",
+    "date": "29/09/2025 20:25",
+    "seller": 7,
+    "images": [
+      "1759781283127-413556060.jpg"
+    ],
+    "location": {
+      "latitude": 48.86207483612515,
+      "longitude": 2.3369872570037846,
+      "address": {
+        "street": "Cour d'Honneur",
+        "city": "Paris",
+        "postalCode": "75001"
+      }
+    },
+    "offers": [
+      {
+        "buyerId": 3,
+        "amount": 3200000,
+        "timestamp": "06/10/2025 22:08"
+      }
+    ],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3,
+    "finalPrice": 3200000
+  },
+  {
+    "id": 19,
+    "name": "Magnesium",
+    "price": 1500,
+    "description": "Natural supplement for vitality and energy support. Helps promote overall wellness and stamina.",
+    "category": "Medicine",
+    "type": "Fixed",
+    "date": "02/10/2025 16:24",
+    "seller": 2,
+    "images": [
+      "1759415079735-898538514.jpg",
+      "1759415079740-368698053.jpg"
+    ],
+    "location": {
+      "latitude": 44.75276091622418,
+      "longitude": 19.68950361013413,
+      "address": {
+        "street": "Масарикова",
+        "city": "Šabac",
+        "postalCode": "15000"
+      }
+    },
+    "offers": [],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 4
+  },
+  {
+    "id": 20,
+    "name": "Bowl",
+    "price": 500,
+    "description": "Nice blue bowl",
+    "category": "Kitchen",
+    "type": "Fixed",
+    "date": "08/10/2025 16:43",
+    "seller": 5,
+    "location": {
+      "latitude": 44.00592311728318,
+      "longitude": 20.94500541687012,
+      "address": {
+        "street": "Кошутњачко брдо",
+        "city": "Kragujevac",
+        "postalCode": "34114"
+      }
+    },
+    "offers": [],
+    "status": "Sold",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false,
+    "buyer": 3
+  },
+  {
+    "id": 21,
+    "name": "Bice obrisan",
+    "price": 12332,
+    "description": "",
+    "category": "Clothing",
+    "type": "Fixed",
+    "date": "17/10/2025 16:45",
+    "seller": 8,
+    "location": {
+      "latitude": 45.247377932704424,
+      "longitude": 19.833767893327202,
+      "address": {
+        "street": "Mise Dimitrijevica",
+        "city": "Novi Sad",
+        "postalCode": "21102"
+      }
+    },
+    "offers": [],
+    "status": "Started",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  },
+  {
+    "id": 22,
+    "name": "Obrisani 2",
+    "price": 41234,
+    "description": "",
+    "category": "Clothing",
+    "type": "Auction",
+    "date": "17/10/2025 16:51",
+    "seller": 8,
+    "location": {
+      "latitude": 39.32636847201667,
+      "longitude": -1.846581404658301,
+      "address": {
+        "street": "Calle Virgen",
+        "city": "Villagarcía del Llano",
+        "postalCode": "21313"
+      }
+    },
+    "offers": [],
+    "status": "Started",
+    "buyerReviewLeft": false,
+    "sellerReviewLeft": false,
+    "deleted": false
+  }
+]

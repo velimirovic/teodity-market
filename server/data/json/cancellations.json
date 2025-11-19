@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "buyerId": 4,
+    "productId": 13,
+    "productName": "Desk Lamp",
+    "date": "14/10/2025 16:28"
+  },
+  {
+    "id": 2,
+    "buyerId": 4,
+    "productId": 19,
+    "productName": "Magnesium",
+    "date": "14/10/2025 16:28"
+  },
+  {
+    "id": 3,
+    "buyerId": 4,
+    "productId": 7,
+    "productName": "Test Product 3",
+    "date": "14/10/2025 16:43"
+  },
+  {
+    "id": 4,
+    "buyerId": 4,
+    "productId": 13,
+    "productName": "Desk Lamp",
+    "date": "14/10/2025 16:44"
+  },
+  {
+    "id": 5,
+    "buyerId": 4,
+    "productId": 12,
+    "productName": "Gaming Mouse",
+    "date": "14/10/2025 16:44"
+  },
+  {
+    "id": 6,
+    "buyerId": 4,
+    "productId": 12,
+    "productName": "Gaming Mouse",
+    "date": "14/10/2025 16:45"
+  }
+]

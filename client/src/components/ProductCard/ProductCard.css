@@ -1,0 +1,1385 @@
+/* FORCE OVERRIDE - Obične kartice status stilovi */
+.product-card .product-status.processing,
+.product-card .product-status.sold,
+.product-card .product-status.rejected {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+
+/* FORCE OVERRIDE - TransactionHistoryProductCard specific - status-badge klase */
+.product-card .status-badge.sold,
+.product-card .status-badge.rejected {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3) !important;
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  opacity: 0.85 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.8px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
+
+/* FORCE OVERRIDE - SVG ikone u status-badge */
+.product-card .status-badge.sold svg,
+.product-card .status-badge.rejected svg {
+  color: rgba(255, 255, 255, 0.95) !important;
+  stroke: currentColor !important;
+}
+
+/* FORCE OVERRIDE - End Auction dugme pink boje */
+.product-card .end-auction-btn-simple {
+  background: linear-gradient(135deg, #D889AC, #B59CAE) !important;
+  box-shadow: 0 4px 15px rgba(216, 137, 172, 0.3) !important;
+}
+
+.product-card .end-auction-btn-simple:hover {
+  background: linear-gradient(135deg, #E495B8, #C48BAB) !important;
+  box-shadow: 0 6px 18px rgba(216, 137, 172, 0.4) !important;
+}
+
+/* FORCE OVERRIDE - Transaction History rejection reason diskretni */
+.product-card.rejected .rejection-reason-inline,
+.product-card .rejection-details {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border-left: 3px solid rgba(255, 255, 255, 0.8) !important;
+  backdrop-filter: blur(10px) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  padding: 8px !important;
+  margin-top: 8px !important;
+}
+
+.product-card.rejected .reason-label,
+.product-card .rejection-details .reason-label {
+  color: #5D2A3D !important;
+  font-size: 9px !important;
+  opacity: 0.8 !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+  margin: 0 0 4px 0 !important;
+}
+
+.product-card.rejected .reason-text,
+.product-card .rejection-details .reason-text {
+  color: #5D2A3D !important;
+  font-size: 10px !important;
+  opacity: 0.9 !important;
+  font-style: italic !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+}
+
+/* FORCE OVERRIDE - Final price bela boja */
+.product-card .final-price {
+  color: rgba(255, 255, 255, 0.95) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.product-card {
+  width: 200px;
+  height: 300px;
+  background: linear-gradient(180deg, #6B3A5A 0%, #B57B9C 60%, #D889AC 100%);
+  border-radius: 20px;
+  padding: 12px;
+  position: relative;
+  color: white;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 8px 25px rgba(107, 58, 90, 0.25), 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.product-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  opacity: 0.8;
+}
+
+.product-card::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    transparent,
+    rgba(255, 255, 255, 0.03),
+    transparent,
+    transparent
+  );
+  animation: shimmer 3s infinite;
+  pointer-events: none;
+}
+
+.card-glow {
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #D889AC, #B57B9C, #6B3A5A, #B57B9C, #D889AC);
+  border-radius: 22px;
+  opacity: 0;
+  z-index: -1;
+  background-size: 400% 400%;
+  animation: gradient-flow 4s ease infinite;
+  transition: opacity 0.3s ease;
+}
+
+.product-info {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  z-index: 2;
+}
+
+.product-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ffffff, #f8f8f8);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-info p:nth-child(2) {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+  font-weight: 500;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.product-info p:nth-child(3) {
+  font-size: 12px;
+  margin: 0;
+  opacity: 0.75;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+
+.product-more {
+  margin-bottom: 12px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.more-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.15));
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 10px 28px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1.5px;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.2));
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 140px;
+  box-shadow: 0 4px 15px rgba(107, 58, 90, 0.3);
+}
+
+.add-to-cart-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.add-to-cart-btn::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.add-to-cart-btn:hover::before {
+  left: 100%;
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.3));
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(107, 58, 90, 0.4);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.add-to-cart-btn:active {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 4px 15px rgba(107, 58, 90, 0.3);
+}
+
+.floating-heart {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-heart::before {
+  content: '♥';
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.floating-heart:nth-child(1) {
+  left: 10%;
+  animation: floatHeart1 4s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.floating-heart:nth-child(2) {
+  left: 30%;
+  animation: floatHeart2 3.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.floating-heart:nth-child(3) {
+  left: 50%;
+  animation: floatHeart3 4.2s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.floating-heart:nth-child(4) {
+  left: 70%;
+  animation: floatHeart1 3.8s ease-in-out infinite;
+  animation-delay: 0.5s;
+}
+
+.floating-heart:nth-child(5) {
+  left: 90%;
+  animation: floatHeart2 4.1s ease-in-out infinite;
+  animation-delay: 1.5s;
+}
+
+.product-status {
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.product-status.started {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.product-status.processing {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.product-status.sold {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.product-status.rejected {
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.approval-overlay, .rejection-overlay {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(93, 42, 61, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.approval-dialog, .rejection-dialog {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  max-width: 280px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.approval-dialog h4, .rejection-dialog h4 {
+  color: #5D2A3D;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+}
+
+.approval-dialog p {
+  color: #7B637B;
+  font-size: 13px;
+  margin: 0 0 18px 0;
+  line-height: 1.4;
+}
+
+.approval-buttons, .rejection-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.approve-btn, .reject-btn, .confirm-reject-btn, .cancel-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  min-width: 70px;
+}
+
+.approve-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+}
+
+.approve-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-1px);
+}
+
+.reject-btn, .confirm-reject-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+}
+
+.reject-btn:hover, .confirm-reject-btn:hover {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  transform: translateY(-1px);
+}
+
+.cancel-btn {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: linear-gradient(135deg, #4b5563, #374151);
+  transform: translateY(-1px);
+}
+
+.rejection-dialog textarea {
+  width: 100%;
+  min-height: 60px;
+  padding: 8px;
+  border: 2px solid rgba(93, 42, 61, 0.3);
+  border-radius: 8px;
+  font-size: 12px;
+  color: #5D2A3D;
+  background: rgba(255, 255, 255, 0.9);
+  margin-bottom: 15px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.rejection-dialog textarea:focus {
+  outline: none;
+  border-color: #D889AC;
+}
+
+.rejection-dialog textarea::placeholder {
+  color: rgba(93, 42, 61, 0.5);
+}
+
+@keyframes floatHeart1 {
+  0%, 100% {
+    bottom: 10px;
+    opacity: 0;
+    transform: translateY(0) scale(0.8);
+  }
+  20% {
+    opacity: 0.6;
+    transform: translateY(-5px) scale(1);
+  }
+  80% {
+    opacity: 0.6;
+    transform: translateY(-15px) scale(1);
+  }
+  100% {
+    bottom: 50px;
+    opacity: 0;
+    transform: translateY(-20px) scale(0.6);
+  }
+}
+
+@keyframes floatHeart2 {
+  0%, 100% {
+    bottom: 5px;
+    opacity: 0;
+    transform: translateY(0) scale(0.9) rotate(-10deg);
+  }
+  25% {
+    opacity: 0.7;
+    transform: translateY(-8px) scale(1.1) rotate(5deg);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateY(-18px) scale(1) rotate(-5deg);
+  }
+  100% {
+    bottom: 45px;
+    opacity: 0;
+    transform: translateY(-25px) scale(0.7) rotate(10deg);
+  }
+}
+
+@keyframes floatHeart3 {
+  0%, 100% {
+    bottom: 8px;
+    opacity: 0;
+    transform: translateY(0) scale(0.7) rotate(15deg);
+  }
+  30% {
+    opacity: 0.8;
+    transform: translateY(-10px) scale(1.2) rotate(-10deg);
+  }
+  70% {
+    opacity: 0.4;
+    transform: translateY(-20px) scale(0.9) rotate(8deg);
+  }
+  100% {
+    bottom: 48px;
+    opacity: 0;
+    transform: translateY(-30px) scale(0.5) rotate(-15deg);
+  }
+}
+
+.add-to-cart-btn:hover .floating-heart {
+  animation-duration: 2s;
+}
+
+.add-to-cart-btn:hover .floating-heart::before {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.more-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s;
+}
+
+.more-btn:hover::before {
+  left: 100%;
+}
+
+.more-btn:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.25));
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
+}
+
+.product-overlay {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.edit-btn, .delete-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+
+.edit-btn::before, .delete-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.edit-btn:hover::before, .delete-btn:hover::before {
+  opacity: 1;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.2));
+  transform: translateY(-3px) scale(1.08);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.edit-btn svg, .delete-btn svg {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.3s ease;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.edit-btn:hover svg, .delete-btn:hover svg {
+  color: white;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(107, 58, 90, 0.4), 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.product-card:hover .card-glow {
+  opacity: 0.6;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%) translateY(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) translateY(100%) rotate(45deg);
+  }
+}
+
+@keyframes gradient-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 180px;
+    height: 280px;
+  }
+  
+  .product-info h3 {
+    font-size: 20px;
+  }
+  
+  .product-info p:nth-child(4) {
+    font-size: 18px;
+  }
+}
+
+.end-auction-overlay {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  background: rgba(34, 197, 94, 0.9);
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+}
+
+.end-auction-dialog {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: center;
+  max-width: 280px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.end-auction-dialog h4 {
+  color: #16a34a;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 12px 0;
+}
+
+.end-auction-dialog p {
+  color: #7B637B;
+  font-size: 13px;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.end-auction-btn {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.end-auction-btn:hover {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  transform: translateY(-1px);
+}
+
+.end-auction-btn-overlay {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 140px;
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+  text-transform: uppercase;
+}
+
+.end-auction-btn-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.end-auction-btn-overlay:hover::before {
+  left: 100%;
+}
+
+.end-auction-btn-overlay:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+  border-color: rgba(255, 255, 255, 0.7);
+}
+
+.end-auction-btn-overlay:active {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.auction-info {
+  margin: 20px 0;
+}
+
+.auction-info p {
+  color: #5D2A3D;
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.answer-btn-overlay {
+  background: linear-gradient(135deg, #D889AC, #B59CAE);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 1px;
+  position: relative;
+  overflow: hidden;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 140px;
+  box-shadow: 0 4px 15px rgba(216, 137, 172, 0.3);
+  text-transform: uppercase;
+}
+
+.answer-btn-overlay:hover {
+  background: linear-gradient(135deg, #E495B8, #C48BAB);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(216, 137, 172, 0.4);
+}
+
+/* IZMENA 2: End Auction dugme iste boje kao Answer */
+.answer-btn-simple, .end-auction-btn-simple {
+  background: linear-gradient(135deg, #D889AC, #B59CAE);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  box-shadow: 0 4px 15px rgba(216, 137, 172, 0.3);
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.answer-btn-simple:hover, .end-auction-btn-simple:hover {
+  background: linear-gradient(135deg, #E495B8, #C48BAB);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(216, 137, 172, 0.4);
+}
+
+/* IZMENA 3: Transaction History kartice - novii okviri u paleti boja */
+.product-card.sold {
+  border: 2px solid #C48BAB;
+  background: linear-gradient(180deg, rgba(216, 137, 172, 0.15) 0%, #6B3A5A 60%, #B57B9C 100%);
+}
+
+.product-card.rejected {
+  border: 2px solid #6B3A5A;
+  background: linear-gradient(180deg, rgba(107, 58, 90, 0.15) 0%, #6B3A5A 60%, #B57B9C 100%);
+}
+
+.rejected-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.rejection-reason-inline {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 8px;
+  margin-top: 8px;
+  border-left: 3px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rejection-reason-inline .reason-label {
+  color: #5D2A3D;
+  font-weight: bold;
+  font-size: 9px;
+  margin: 0 0 4px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: none;
+  opacity: 0.8;
+}
+
+.rejection-reason-inline .reason-text {
+  color: #5D2A3D;
+  font-style: italic;
+  font-size: 10px;
+  line-height: 1.3;
+  margin: 0;
+  word-wrap: break-word;
+  text-shadow: none;
+  opacity: 0.9;
+}
+
+.status-icon {
+  opacity: 0.9;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.final-price {
+  color: rgba(255, 255, 255, 0.95) !important;
+  font-weight: bold !important;
+  font-size: 14px !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Dialog Styles - Unified for all card dialogs */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.dialog-container {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: hidden;
+  border: 1px solid rgba(216, 137, 172, 0.3);
+}
+
+.dialog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+  border-bottom: 2px solid rgba(216, 137, 172, 0.2);
+  background: linear-gradient(135deg, rgba(216, 137, 172, 0.1), rgba(181, 156, 174, 0.1));
+}
+
+.dialog-header h3 {
+  color: #5D2A3D;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: #7B637B;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: rgba(216, 137, 172, 0.2);
+  color: #5D2A3D;
+}
+
+.dialog-content {
+  padding: 30px;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.product-summary {
+  background: rgba(216, 137, 172, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 4px solid #D889AC;
+}
+
+.product-summary h4 {
+  color: #5D2A3D;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.product-summary p {
+  color: #7B637B;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.decision-content {
+  text-align: center;
+}
+
+.decision-content p {
+  color: #5D2A3D;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.decision-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* IZMENA 5: Approve i Reject dugmici u skladu sa paletom boja */
+.approve-decision-btn, .reject-decision-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  min-width: 100px;
+  font-family: Arial, sans-serif;
+}
+
+.approve-decision-btn {
+  background: linear-gradient(135deg, #D889AC, #B59CAE);
+  color: white;
+  box-shadow: 0 4px 12px rgba(216, 137, 172, 0.3);
+}
+
+.approve-decision-btn:hover {
+  background: linear-gradient(135deg, #E495B8, #C48BAB);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(216, 137, 172, 0.4);
+}
+
+.reject-decision-btn {
+  background: linear-gradient(135deg, #6B3A5A, #5D2A3D);
+  color: white;
+  box-shadow: 0 4px 12px rgba(107, 58, 90, 0.3);
+}
+
+.reject-decision-btn:hover {
+  background: linear-gradient(135deg, #5D2A3D, #4A2230);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(107, 58, 90, 0.4);
+}
+
+.approve-content p, .reject-content p {
+  color: #5D2A3D;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.confirmation-note, .rejection-note {
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.rejection-note {
+  background: rgba(239, 68, 68, 0.1);
+  border-color: rgba(239, 68, 68, 0.2);
+}
+
+.confirmation-note p, .rejection-note p {
+  color: #5D2A3D;
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.confirmation-note ul {
+  color: #7B637B;
+  font-size: 14px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.confirmation-note li {
+  margin: 5px 0;
+}
+
+.rejection-textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px;
+  border: 2px solid rgba(216, 137, 172, 0.3);
+  border-radius: 8px;
+  font-size: 14px;
+  color: #5D2A3D;
+  background: rgba(255, 255, 255, 0.9);
+  resize: vertical;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.rejection-textarea:focus {
+  outline: none;
+  border-color: #D889AC;
+}
+
+.rejection-textarea::placeholder {
+  color: rgba(93, 42, 61, 0.5);
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 15px;
+  padding: 25px 30px;
+  border-top: 2px solid rgba(216, 137, 172, 0.2);
+  background: rgba(216, 137, 172, 0.05);
+}
+
+/* IZMENA 1 & 2: Dugmici u End Auction dijalogu sa ispravnim fontom i bojama */
+.cancel-btn, .confirm-approve-btn, .confirm-reject-btn, .back-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: Arial, sans-serif;
+}
+
+.cancel-btn {
+  background: linear-gradient(135deg, #6B3A5A, #5D2A3D);
+  color: white;
+  box-shadow: 0 4px 12px rgba(107, 58, 90, 0.3);
+}
+
+.cancel-btn:hover {
+  background: linear-gradient(135deg, #5D2A3D, #4A2230);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(107, 58, 90, 0.4);
+}
+
+.confirm-approve-btn {
+  background: linear-gradient(135deg, #D889AC, #B59CAE);
+  color: white;
+  box-shadow: 0 4px 12px rgba(216, 137, 172, 0.3);
+}
+
+.confirm-approve-btn:hover {
+  background: linear-gradient(135deg, #E495B8, #C48BAB);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(216, 137, 172, 0.4);
+}
+
+.confirm-reject-btn {
+  background: linear-gradient(135deg, #6B3A5A, #5D2A3D);
+  color: white;
+  box-shadow: 0 4px 12px rgba(107, 58, 90, 0.3);
+}
+
+.confirm-reject-btn:hover {
+  background: linear-gradient(135deg, #5D2A3D, #4A2230);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(107, 58, 90, 0.4);
+}
+
+.back-btn {
+  background: linear-gradient(135deg, #D889AC, #B59CAE);
+  color: white;
+  box-shadow: 0 4px 12px rgba(216, 137, 172, 0.3);
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #B59CAE, #D889AC);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(216, 137, 172, 0.4);
+}
+
+.highest-bid {
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  font-size: 12px;
+  margin: 2px 0;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+/* Mobile responsive dialogs */
+@media (max-width: 768px) {
+  .dialog-container {
+    margin: 10px;
+    max-width: none;
+  }
+  
+  .dialog-header {
+    padding: 20px;
+  }
+  
+  .dialog-content {
+    padding: 20px;
+  }
+  
+  .dialog-actions {
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .decision-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dialog-header h3 {
+    font-size: 18px;
+  }
+  
+  .product-summary h4 {
+    font-size: 16px;
+  }
+  
+  .auction-info p {
+    font-size: 14px;
+  }
+}
+
+/* CANCEL DUGME ZA KUPCE */
+.cancel-btn-card {
+  background: linear-gradient(135deg, rgba(107, 58, 90, 0.9), rgba(93, 42, 61, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 10px rgba(107, 58, 90, 0.4);
+  backdrop-filter: blur(5px);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cancel-btn-card:hover {
+  background: linear-gradient(135deg, rgba(93, 42, 61, 0.95), rgba(74, 34, 48, 0.95));
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(107, 58, 90, 0.5);
+}
+
+.product-card .rejection-reason-inline {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 6px 8px;
+  margin-top: 6px;
+  margin-bottom: 8px;
+  border-left: 3px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 40px;
+  overflow: hidden;
+}
+
+.product-card .rejection-reason-inline .reason-label {
+  color: #5D2A3D;
+  font-weight: bold;
+  font-size: 8px;
+  margin: 0 0 2px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
+
+.product-card .rejection-reason-inline .reason-text {
+  color: #5D2A3D;
+  font-style: italic;
+  font-size: 9px;
+  line-height: 1.2;
+  margin: 0;
+  word-wrap: break-word;
+  opacity: 0.9;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-seller-panel {
+  margin-bottom: -5px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: -20px;
+}
+
+.card-seller-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 6px 8px;
+  width: 100%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 30px;
+}
+
+.card-seller-info:disabled {
+  cursor: default;
+  transform: none;
+}
+
+.card-seller-info:enabled:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateX(3px);
+}
+
+.card-seller-avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  flex-shrink: 0;
+}
+
+.card-seller-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  text-align: left;
+}
+
+.card-seller-username {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 11px;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-seller-rating {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.card-rating-star {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 10px;
+}
+
+.card-rating-value {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .card-seller-panel {
+    margin-bottom: 8px;
+    padding: 6px;
+  }
+  
+  .card-seller-avatar {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .card-seller-username {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Electronics",
+    "deleted": false
+  },
+  {
+    "id": 2,
+    "name": "Furniture",
+    "deleted": false
+  },
+  {
+    "id": 3,
+    "name": "Clothing",
+    "deleted": false
+  },
+  {
+    "id": 4,
+    "name": "Home & Garden",
+    "deleted": false
+  },
+  {
+    "id": 5,
+    "name": "Sports",
+    "deleted": false
+  },
+  {
+    "id": 6,
+    "name": "Eletronic Helpers",
+    "deleted": false
+  },
+  {
+    "id": 7,
+    "name": "Kitchen",
+    "deleted": false
+  },
+  {
+    "id": 8,
+    "name": "Shoes",
+    "deleted": false
+  },
+  {
+    "id": 9,
+    "name": "Art",
+    "deleted": false
+  },
+  {
+    "id": 10,
+    "name": "Medicine",
+    "deleted": false
+  }
+]

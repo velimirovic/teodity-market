@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "reporterId": 2,
+    "reportedUserId": 4,
+    "reason": "Korisnik nije isporučio proizvod nakon što je primio uplatu. Pokušao sam da ga kontaktiram više puta ali se ne javlja.",
+    "status": "Pending",
+    "adminComment": "",
+    "date": "10/01/2025 10:30",
+    "deleted": false
+  },
+  {
+    "id": 2,
+    "reporterId": 3,
+    "reportedUserId": 5,
+    "reason": "Proizvod koji sam primio je potpuno drugačiji od onoga što je prikazano na slikama. Sumnjam da je prevara.",
+    "status": "Rejected",
+    "adminComment": "Neistina.",
+    "date": "12/01/2025 14:15",
+    "deleted": false
+  },
+  {
+    "id": 3,
+    "reporterId": 4,
+    "reportedUserId": 2,
+    "reason": "Prodavac je bio nepristojan i pretio mi tokom komunikacije.",
+    "status": "Rejected",
+    "adminComment": "",
+    "date": "05/01/2025 09:00",
+    "deleted": false
+  },
+  {
+    "id": 4,
+    "reporterId": 5,
+    "reportedUserId": 3,
+    "reason": "Smatram da je korisnik ostavio lažnu negativnu recenziju samo da mi naškodi.",
+    "status": "Rejected",
+    "adminComment": "Nakon provere, recenzija je legitimna i odgovara transakciji. Odbijamo prijavu.",
+    "date": "08/01/2025 16:45",
+    "deleted": false
+  },
+  {
+    "id": 5,
+    "reporterId": 5,
+    "reportedUserId": 3,
+    "reason": "Korisnik je ostavio neprimeren i seksualno degradirajuci komentar u recenziji mog profila.",
+    "status": "Rejected",
+    "adminComment": "Nasa stranica ne samo da ne osudjuje, vec i ohrabruje komentare seksualne prirode, te ne mozemo uvaziti Vasu prijavu.",
+    "date": "14/10/2025 15:20",
+    "deleted": false
+  },
+  {
+    "id": 6,
+    "reporterId": 5,
+    "reportedUserId": 3,
+    "reason": "Stavila drugu cenu na postu",
+    "status": "Pending",
+    "adminComment": "",
+    "date": "17/10/2025 16:58",
+    "deleted": false
+  },
+  {
+    "id": 7,
+    "reporterId": 7,
+    "reportedUserId": 3,
+    "reason": "Ukrala mi je monalisu",
+    "status": "Pending",
+    "adminComment": "",
+    "date": "17/10/2025 17:01",
+    "deleted": false
+  },
+  {
+    "id": 8,
+    "reporterId": 4,
+    "reportedUserId": 2,
+    "reason": "Prijavljujem jer je previse dobar!",
+    "status": "Pending",
+    "adminComment": "",
+    "date": "17/10/2025 17:02",
+    "deleted": false
+  },
+  {
+    "id": 9,
+    "reporterId": 4,
+    "reportedUserId": 6,
+    "reason": "Uzas",
+    "status": "Pending",
+    "adminComment": "",
+    "date": "17/10/2025 17:03",
+    "deleted": false
+  }
+]

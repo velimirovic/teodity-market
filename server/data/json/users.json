@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "name": "Marko",
+    "surname": "Velimirovic",
+    "username": "admin",
+    "mail": "velimirovitsh@gmail.com",
+    "number": "+381123456789",
+    "password": "admin123",
+    "birthday": "21/12/2003",
+    "image": "default.png",
+    "description": "System administrator",
+    "role": "Administrator",
+    "blocked": false
+  },
+  {
+    "id": 2,
+    "name": "Marko",
+    "surname": "Petrović",
+    "username": "marko",
+    "mail": "velimirovic.official@gmail.com",
+    "number": "+381987654321",
+    "password": "marko123",
+    "birthday": "15/05/1995",
+    "image": "marko.jpg",
+    "description": "Prodajem kvalitetnu elektroniku",
+    "role": "Seller",
+    "blocked": false,
+    "products": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      19
+    ],
+    "reviews": [
+      2,
+      8
+    ],
+    "avgRating": 5
+  },
+  {
+    "id": 3,
+    "name": "Teodora",
+    "surname": "Lazarevic",
+    "username": "teodorakis",
+    "mail": "teodora.lazarevic251103@gmail.com",
+    "number": "+381555666777",
+    "password": "Teodora123!",
+    "birthday": "25/11/2003",
+    "image": "1759604954531-364330431.png",
+    "description": "Volim da kupujem knjige i dekoracije i tako to",
+    "role": "Buyer",
+    "blocked": false,
+    "products": [
+      2,
+      3,
+      8,
+      9,
+      10,
+      1,
+      6,
+      20,
+      14,
+      18
+    ],
+    "reviews": [
+      1,
+      4,
+      5,
+      7
+    ],
+    "avgRating": 3.5
+  },
+  {
+    "id": 4,
+    "name": "Nikolina",
+    "surname": "Vasiljevic",
+    "username": "nikolina",
+    "mail": "teodora.lazarevic251103@gmail.com",
+    "number": "0637311862",
+    "password": "nikolina123",
+    "birthday": "",
+    "image": "default.png",
+    "description": "",
+    "role": "Buyer",
+    "blocked": false,
+    "products": [
+      15,
+      16,
+      19,
+      13,
+      5
+    ],
+    "reviews": [
+      6,
+      10
+    ],
+    "avgRating": 5
+  },
+  {
+    "id": 5,
+    "name": "Strahinja",
+    "surname": "Bijelogrlic",
+    "username": "strahinja",
+    "mail": "velimirovic.official@gmail.com",
+    "number": "066666666",
+    "password": "strahinja123",
+    "birthday": "",
+    "image": "default.png",
+    "description": "",
+    "role": "Seller",
+    "blocked": false,
+    "products": [
+      11,
+      12,
+      16,
+      20
+    ],
+    "reviews": [
+      3
+    ],
+    "avgRating": 5
+  },
+  {
+    "id": 6,
+    "name": "Ana",
+    "surname": "Vasic",
+    "username": "anavasic",
+    "mail": "teodora.lazarevic251103@gmail.com",
+    "number": "+381645879635",
+    "password": "ana123",
+    "birthday": "",
+    "image": "default.png",
+    "description": "",
+    "role": "Seller",
+    "blocked": false,
+    "products": [
+      13,
+      14,
+      15
+    ],
+    "reviews": [
+      9
+    ],
+    "avgRating": 1
+  },
+  {
+    "id": 7,
+    "name": "Vasilije",
+    "surname": "Kicanovic",
+    "username": "vasilije",
+    "mail": "velimirovic.official@gmail.com",
+    "number": "063227358",
+    "password": "vasilije123",
+    "birthday": "marko",
+    "image": "default.png",
+    "description": "",
+    "role": "Seller",
+    "blocked": false,
+    "products": [
+      18
+    ],
+    "reviews": [],
+    "avgRating": 0
+  },
+  {
+    "id": 8,
+    "name": "Vukasin",
+    "surname": "Mrnjavcevic",
+    "username": "vukasin",
+    "mail": "vukasinnnnnxdgdxsd@gmail.com",
+    "number": "0638107245",
+    "password": "Vukasin123!",
+    "birthday": "",
+    "image": "default.png",
+    "description": "",
+    "role": "Seller",
+    "blocked": false,
+    "products": [
+      21,
+      22
+    ],
+    "reviews": [],
+    "avgRating": 0
+  }
+]
