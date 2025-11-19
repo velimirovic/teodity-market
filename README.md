@@ -2,20 +2,11 @@
 
 E-commerce marketplace aplikacija izgrađena sa React-om i Node.js/Express-om. Podržava prodaju po fiksnoj ceni i aukcije, sa sistemom uloga za kupce, prodavce i administratore.
 
-## 📋 Sadržaj
-
-- [O Projektu](#o-projektu)
-- [Funkcionalnosti](#funkcionalnosti)
-- [Tehnologije](#tehnologije)
-- [Instalacija](#instalacija)
-- [Pokretanje](#pokretanje)
-
----
-
 ## O Projektu
 
 Teodity Market je web aplikacija za online kupovinu i prodaju. Projekat omogućava kupcima da pregledaju proizvode, dodaju ih u korpu i kupuju, dok prodavci mogu da postavljaju proizvode po fiksnoj ceni ili kao aukcije. Administratori imaju kontrolu nad korisnicima, recenzijama i prijavama.
 
+https://imgur.com/a/RffNeY8
 ---
 
 ## Funkcionalnosti
